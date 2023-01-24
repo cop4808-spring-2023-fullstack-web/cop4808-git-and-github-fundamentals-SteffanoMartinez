@@ -1,3 +1,5 @@
+Steffano Martinez - COP4808 
+
 # :wave: The Basics of GitHub 
 
 ## 🤓 Course overview and learning outcomes 
