@@ -108,3 +108,8 @@ button {
 .percent:active {
     background-color: rgb(123, 189, 255);
 }
+
+.extended-operator {
+    background-color: rgb(46, 160, 118);
+    font-weight: bold;
+}
