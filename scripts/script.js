@@ -29,6 +29,13 @@ function clickButton() {
                 updateDisplay();
             } else if(buttons[i].classList.contains('operator')) {
                 inputOperator(buttons[i].value);
+            // Additional query added to button array //
+            } else if(buttons[i].classList.contains('extended-operator')){
+                if(buttons[i].classList.contains('pi')){
+                    inputOperator(buttons[i].value);
+                }
+                inputOperator(buttons[i].id);
+            // ###################################### //
             } else if(buttons[i].classList.contains('equals')) {
                 inputEquals();
                 updateDisplay();
@@ -176,6 +183,15 @@ function operate(x, y, op) {
         } else {
         return x / y;
         }
+    // Added functionality // 
+    } else if (op == 'sqrt') {
+        return Math.sqrt(x);
+    } else if (op == 'pi'){
+        return 3.14;
+    } else if (op == 'square') {
+        return x * x;
+    } else if (op == 'log'){
+        return Math.log10(x);
     }
 }
 
